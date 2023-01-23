@@ -88,6 +88,70 @@ $("section").wrap("<div>");
 */
 
 /*
-Changing attributes
+removing content from dom
+
+.empty() - empties the inner HTML of an element
+.remove() - removes the element completely
+
+$(".button").empty()
+$(".button").remove()
+*/
+
+
+/*
+changing attributes
+
+.removeAttr() removes an attribute completely
+.attr() can read or set any attribute
+
+$("#contact img").removeAttr("alt");
+$("#contact img").attr("alt", "location");
 
 */
+
+/*
+controling CSS with Jquery
+
+$(".button").css({"top": "-400px", "left": "150px", "opacity": ".5", "border-top": "5px solid green"})
+
+*/
+
+/*
+
+Adding & removing classes
+
+removeClass() - removes the class
+addClass() - adds a new class
+toggleClass - **toggles the class on and off**
+
+$(".wrapper").removeClass();
+
+*/
+
+/*
+Event binding
+
+on() - binds an event to matched element
+off() - unbinds event
+
+var mylist = $("#points-of-sale li");
+
+mylist.on("click", function(){
+    
+    $(this).css({"background": "red" })
+
+    mylist.off("click")
+})
+
+*/
+
+/*
+event helpers
+
+$("#lead-banner").click(function(){
+    alert("Clicked me");
+})
+
+*/
+
+
