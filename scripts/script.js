@@ -154,4 +154,101 @@ $("#lead-banner").click(function(){
 
 */
 
+/*
+document ready vs window load
 
+$(document).on("ready", function(){
+    **write function here**
+})
+
+above command can be writte as 
+$(function(){})
+
+$(window).on("load", function(){
+    **once the window is loaded inc all images**
+})
+
+*/
+
+/*
+Event object in jQuery
+
+$(document).ready(function(){
+    
+    $("*").on("click", function(e){
+        console.log("the event type is " + e.type);
+        console.log("X coodinate on the page is " + e.pageX);
+        console.log("Y coodinate on the page is " + e.pageY);
+    })
+})
+
+*/
+
+/*
+Animations in jQuery
+
+$(document).ready(function(){
+    $("section > h2").on("click", function(){
+        $(this).animate({"height":"100px", "width":"200px"}, 1000)
+    })
+})
+*/
+
+/*
+Fading elements IN & OUT
+
+$(document).ready(function(){
+    $("section > h2").on("click", function(){
+        $(this).fadeOut(2000).fadeIn(500);
+    })
+})
+
+$(document).ready(function(){
+    $("section > h2").on("click", function(){
+        $(this).fadeTo(1000, 0.2)
+    })
+})
+*/
+
+/*
+Hide, show and toggle
+
+$(document).ready(function(){
+    $("section > h2").on("click", function(){
+        $(this).hide(1000).show(1000);
+    })
+})
+
+$(document).ready(function(){
+    $("section > h2").on("click", function(){
+        $(this).toggle(1000).toggle(1000);
+    })
+})
+*/
+
+/*
+Sliding elements
+
+$(document).ready(function(){
+    $(".slide-up-btn").on("click", function(){
+        $("#lead-banner").slideUp();
+    })
+
+    $(".slide-up-btn").on("click", function(){
+        $("#lead-banner").slideDown();
+    })
+})
+*/
+
+/*
+fading animation exmaple
+
+*/
+
+/*
+
+*/
+$(document).ready(function(){
+    
+    
+})

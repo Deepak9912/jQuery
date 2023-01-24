@@ -441,3 +441,11 @@ section#points-of-sale ul {
 .open{
   height: auto !important;
 }
+
+blockquote{
+  display: none;
+}
+
+blockquote:first-of-type {
+  display: block;
+}
